@@ -18,7 +18,15 @@ public class CellPhone {
     public CellPhone(){
 
     }
-
+    public static void display(CellPhone phone){
+        System.out.println("The owner is " + phone.getOwner());
+        System.out.println("The model is " + phone.getModel());
+        System.out.println("The carrier is " + phone.getCarrier());
+        System.out.println("The phone number is " + phone.getPhoneNumber());
+    }
+    public void dial(String phoneNumber){
+        System.out.println(getOwner()+"'s phone is calling " + phoneNumber);
+    }
     public int getSerialNumber() {
         return serialNumber;
     }
